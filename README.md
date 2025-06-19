@@ -47,7 +47,7 @@ A modern and responsive web application to test and improve your typing speed an
 - **CSS3** – Styling and animations
 - **JavaScript** – Core functionality
 - **Git** – Version control
-- **GitHub** – Code hosting and
+- **GitHub** – Code hosting and collaboration
 - **GitHub Pages** – Static website hosting
 
 ---
