@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeSpeed - Typing Speed Test</title>
+    <link rel="icon" href="/favlogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">TypeSpeed</h1>
+            <p class="subtitle">Test your typing speed and accuracy</p>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-content">
+                    <p class="stat-label">Time</p>
+                    <p class="stat-value" id="timeDisplay">60s</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-content">
+                    <p class="stat-label">WPM</p>
+                    <p class="stat-value" id="wpmDisplay">0</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-content">
+                    <p class="stat-label">Accuracy</p>
+                    <p class="stat-value" id="accuracyDisplay">100%</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">🔄</div>
+                <div class="stat-content">
+                    <p class="stat-label">Errors</p>
+                    <p class="stat-value" id="errorsDisplay">0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Typing Area -->
+        <div class="typing-area">
+            <div class="text-display" id="textDisplay"></div>
+            <textarea id="textarea-input" rows="4" autofocus class="typing-input" placeholder="Click here and start typing..."
+                autocomplete="off" spellcheck="false"></textarea>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="resetBtn" class="reset-btn">
+                🔄 Reset Test
+            </button>
+        </div>
+
+        <!-- Results Modal -->
+        <div id="resultsModal" class="modal hidden">
+            <div class="modal-content">
+                <h2 class="modal-title">Test Complete!</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <span class="result-label">Words per minute:</span>
+                        <span class="result-value wpm" id="finalWPM">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Accuracy:</span>
+                        <span class="result-value accuracy" id="finalAccuracy">100%</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total errors:</span>
+                        <span class="result-value errors" id="finalErrors">0</span>
+                    </div>
+                </div>
+                <button id="tryAgainBtn" class="try-again-btn">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
