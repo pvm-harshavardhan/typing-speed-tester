@@ -2,6 +2,8 @@
 
 A modern and responsive web application to test and improve your typing speed and accuracy. Challenge yourself with real-time typing tests and track your progress.
 
+> 🌐 **Live Demo:** [View the Typing Speed Tester App](https://pvm-harshavardhan.github.io/typing-speed-tester/)
+
 ![App Screenshot](/project_screenshot.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
